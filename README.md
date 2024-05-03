@@ -1,19 +1,29 @@
-# Módulo 3 - Trilha HTML
+# Lua - Linguagem de Programação
 
-**Título:** Recriando Wikipedia, com um layout melhor :)
+Este projeto consiste em uma página HTML que apresenta informações sobre a linguagem de programação Lua, incluindo sua história, características, e uma breve descrição da linguagem.
 
-## Objetivo
-Este desafio consiste em treinar você com relação a estrutura do site, e também aplicar conhecimentos adiquiridos sobre semântica e acessibilidade.
+## Como Usar
 
-## Desafio
-Neste repositório tem uma estrutura básica já pré-montada de um layout simples com um pouco de CSS aplicado. Apenas para deixar mais apresentável.
+Para visualizar a página, simplesmente abra o arquivo `index.html` em um navegador da web.
 
-Fiquem a vontade para criar da forma que desejarem, e sobre os temas que quiserem. O intuito aqui é divertir, e ao mesmo tempo aprender com o desafio.
+## Recursos
 
-Sigam as intruções da chamada do vídeo. Acredito que por lá, ficará mais fácil de entenderem como proceder.
+- **Referências:** Links úteis relacionados à linguagem Lua.
+- **História:** Breve história da criação da linguagem Lua.
+- **Características:** Destaca as principais características da linguagem Lua.
+- **A Linguagem:** Descrição detalhada dos aspectos sintáticos e semânticos da linguagem Lua.
+- **Convenção Léxica:** Explicações sobre a convenção léxica utilizada em Lua.
+- **Tabelas:** Informações sobre as tabelas, uma estrutura de dados importante em Lua.
 
-## Links úteis
-- [Download do NVDA](https://www.nvaccess.org/download/)
-- [Wikipedia](https://pt.wikipedia.org/)
+## Créditos
 
+- **Imagens:** Logotipo da Lua e imagem da Universidade PUC do Rio de Janeiro.
+- **Vídeo:** [Lua in 100 Seconds](https://www.youtube.com/embed/jUuqBZwwkQw) - um vídeo explicativo sobre os pontos principais da linguagem Lua.
 
+## Contribuindo
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir um problema ou enviar um pull request.
+
+## Licença
+
+Este projeto está licenciado sob a [Licença MIT](LICENSE).

@@ -1,44 +1,278 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Principal</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-
-    <div>   
-        <div class="logo">
-            <img src="assets/images/logo.png" width="200"/>
-        </div>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lua - Linguagem de Programação</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="assets/images/lua_logo.png"
+          width="150"
+          alt="Logotipo da linguagem Lua de programação"
+        />
+      </div>
+    </header>
 
     <div class="bar"></div>
 
     <div class="content">
-        <div class="sidebar">
-            <h2>Título</h2>
-            <ul>
-                <li><a href="#">Links</a></li>
-            </ul>
-        </div>
+      <div class="sidebar">
+        <h2>Referências</h2>
+        <nav>
+          <ul>
+            <li>
+              <a href="https://www.lua.org/"
+                >Site ofical <i><b>Lua Organitazion</b></i></a
+              >
+            </li>
+            <li>
+              <a href="https://www.lua.org/docs.html"
+                >Documentação Oficial da Linguagem Lua</a
+              >
+            </li>
+            <li>
+              <a href="https://www.puc-rio.br/index.html"
+                >Site oficial da Univerisdae PUC - Criadora da linguagem</a
+              >
+            </li>
+            <li>
+              <a href="https://blog.back4app.com/pt/startups-usando-lua/"
+                >10 Startups usando Lua</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
 
-        <div class="main">
-            
-        </div>
+      <main>
+        <div class="main"></div>
+        <h1 id="title">Lua - Linguagem de Programação</h1>
+        <hr />
+        <p>
+          Lua é uma linguagem de programação interpretada, de script em alto
+          nível, com tipagem dinâmica e multiparadigma, reflexiva e leve,
+          projetada por Tecgraf da PUC-Rio em 1993 para expandir aplicações em
+          geral, de forma extensível (que une partes de um programa feitas em
+          mais de uma linguagem), para prototipagem e para ser embarcada em
+          softwares complexos, como jogos. Assemelha-se com Python, Ruby e Icon,
+          entre outras.
+        </p>
 
+        <p>
+          Lua foi criada por um time de desenvolvedores do Tecgraf da PUC-Rio, a
+          princípio, para ser usada em um projeto da Petrobras. Devido à sua
+          eficiência, clareza e facilidade de aprendizado, passou a ser usada em
+          diversos ramos da programação, como no desenvolvimento de jogos (<i
+            ><b>Blizzard Entertainment</b>, por exemplo, usou a linguagem no
+            jogo <b>World of Warcraft</b></i
+          >), controle de robôs, processamento de texto, etc. Também é
+          frequentemente usada como uma linguagem de propósito geral.
+        </p>
+
+        <h2 id="history">História</h2>
+        <hr />
+        <p>
+          Lua foi criada em 1993 por Roberto Ierusalimschy, Luiz Henrique de
+          Figueiredo e Waldemar Celes, membros do Computer Graphics Technology
+          Group na PUC-Rio, a Pontifícia Universidade Católica do Rio de
+          Janeiro, no Brasil. Versões de Lua antes da versão 5.0 foram liberadas
+          sob uma licença similar à licença BSD. A partir da versão 5.0, Lua foi
+          licenciada sob a licença MIT.
+        </p>
+
+        <p>
+          Alguns de seus parentes mais próximos são o Icon, por sua concepção, e
+          Python, por sua facilidade de utilização por não programadores. Em um
+          artigo publicado no Dr. Dobb's Journal, os criadores de Lua também
+          afirmam que Lisp e Scheme foram uma grande influência na decisão de
+          desenvolver a tabela como a principal estrutura de dados de Lua. Lua
+          tem sido usada em várias aplicações, tanto comerciais como não
+          comerciais.
+        </p>
+        <figure>
+          <img
+            src="assets/images/puc.jpeg"
+            alt="Imagem da universidade PUC do Rio de Janeiro no Brasil"
+          />
+          <figcaption>
+            <i
+              >Imagem da Universidade PUC, vista àrea do Rio de Janeiro,
+              Brasil.</i
+            >
+          </figcaption>
+        </figure>
+        <h2 id="description">Características</h2>
+        <hr />
+        <p>
+          Lua é normalmente descrita como uma linguagem de múltiplos paradigmas,
+          oferecendo um pequeno conjunto de características gerais que podem ser
+          estendidas para encaixar diferentes tipos de problemas, em vez de
+          fornecer uma especificação mais complexa e rígida para combinar com um
+          único paradigma. Lua, por exemplo, não contém apoio explícito à
+          herança, mas permite que ela seja executada com relativa facilidade
+          com metatables. Do mesmo modo, Lua permite que programadores quando
+          implementam nomes, classes, e outras funções, empreguem poderosas
+          técnicas de programação funcional e completos escopos lexicais.
+        </p>
+
+        <p>
+          Lua é uma linguagem que suporta apenas um pequeno número de
+          estruturas, tais como dados atômicos, valores booleanos, números
+          (dupla precisão em ponto flutuante por padrão), e strings. As
+          estruturas de dados comuns, tais como matrizes, conjuntos, tabelas,
+          listas, e registros podem ser representados por meio de Lua. Lua não
+          foi construída com suporte para programação orientada a objeto.
+        </p>
+
+        <h2 id="language">A Linguagem</h2>
+        <hr />
+        <p>
+          Esta seção descreve o vocabulário, aspectos sintáticos e semânticos de
+          Lua. Em outras palavras, esta seção descreve quais itens de
+          vocabulário são válidos, como combiná-los e o que significam. A
+          estrutura da linguagem será explicada usando a notação BNF estendida
+          usual, onde {a} representa zero ou mais a, e [a] representa um a
+          opcional. Os não terminais são exibidos como não terminais, as
+          palavras-chave são exibidas como kword e outros símbolos de terminal
+          são exibidos como "=". A sintaxe Lua completa deve ser verificada
+          diretamente no site oficial da organização.<br />
+          <a href="https://www.lua.org/"
+            >Clique aqui para ir direto para o site oficia!</a
+          >
+        </p>
+        <h3 id="convention">Convenções Léxicas</h3>
+        <p>
+          Em Lua, um nome (também chamado de identificador) pode ser qualquer
+          string de letras, números e sublinhados que não comece com um número.
+          Esta definição é consistente com a definição de nomes na maioria dos
+          idiomas. (A definição da letra depende do idioma (local): o idioma
+          atual considera qualquer caractere da letra a ser usado como um
+          identificador.) Os identificadores são usados para nomear variáveis
+          campos de tabela. <br />
+          As seguintes <mark>palavras-chave</mark> são reservadas e não podem
+          ser usadas como nomes:
+        </p>
+        <caption>
+          Table de demonstração
+        </caption>
+        <table id="conven_lex" align="center" border="1">
+          <tr>
+            <th>+</th>
+
+            <th>*</th>
+
+            <th>=&gt;</th>
+
+            <th>/</th>
+
+            <th>%</th>
+
+            <th>&gt;=</th>
+
+            <th>&gt;</th>
+          </tr>
+
+          <tr>
+            <th>#</th>
+
+            <th>v</th>
+
+            <th>%</th>
+
+            <th>&gt;</th>
+
+            <th>{</th>
+
+            <th>}</th>
+
+            <th>[</th>
+          </tr>
+
+          <tr>
+            <th>]</th>
+
+            <th>(</th>
+
+            <th>)</th>
+
+            <th>i</th>
+
+            <th>:</th>
+
+            <th>'</th>
+
+            <th>:</th>
+          </tr>
+        </table>
+
+        <h2 id="tables">Tabelas</h2>
+        <hr />
+        <p>
+          As tabelas são as estruturas de dados mais importantes (e, por
+          concepção, a única estrutura de dados complexas) em Lua, e são a base
+          de todos os tipos de dados possíveis na linguagem. Por meio da
+          utilização de tabelas podemos simular vetores, matrizes, estruturas,
+          objetos, etc.
+        </p>
+
+        <p>
+          A tabela é um conjunto de chaves e pares de dados também conhecido
+          como hashed heterogeneous associative array', onde os dados são
+          referenciados por chave. A chave (índice) pode ser de qualquer tipo de
+          dado exceto nulo. Um inteiro com chave valor 1 é considerada distinta
+          da chave de uma string "1".
+        </p>
+        <p>As tabelas podem ser criadas com a segunite sintaxe {}</p>
+        <pre>
+          <code> a_table = {} -- Cria uma nova tabela vazia</code>
+          </pre>
+
+        <p>Também podem ser passadas por referência:</p>
+        <pre>
+          <code>
+print(a_table["x"]) -- Escreve o valor da tabela a_table índice "x", que neste caso tem o valor numérico 10
+b_table = a_table
+a_table["x"] = 20   -- O valor da tabela a_table índice "x", é trocado para 20
+print(a_table["x"]) -- Escreve o valor de a_table índice "x", que é igual a 20
+          </code>
+        </pre>
+
+        <caption>
+          Segue abaixo um vídeo sobre os pontos principais da linguagem Lua:
+        </caption>
+        <iframe
+          width="775"
+          height="400"
+          src="https://www.youtube.com/embed/jUuqBZwwkQw"
+          title="Lua in 100 Seconds"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </main>
+      <nav>
         <div class="anchors">
-            <h2>Neste Artigo</h2>
-            <ul>
-                <li><a href="#">Âncoras</a></li>
-            </ul>
+          <h2>Neste Artigo</h2>
+          <ul>
+            <li><a href="#title">Título</a></li>
+            <li><a href="#history">História</a></li>
+            <li><a href="#description">Características</a></li>
+            <li><a href="#language">A Linguagem</a></li>
+            <li><a href="#convention">Convenção Léxica</a></li>
+            <li><a href="#tables">Tabelas</a></li>
+          </ul>
         </div>
+      </nav>
     </div>
-
-    <div class="footer">
-
-    </div>
-</body>
+    <footer>
+      <div class="footer"></div>
+    </footer>
+  </body>
 </html>
+
